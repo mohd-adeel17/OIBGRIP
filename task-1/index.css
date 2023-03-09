@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* background-image:  linear-gradient(to right, grey, black); */
+}
+body{
+    background-image:  linear-gradient(to right, lightblue, black);
+}
+.navbar{
+    /* background-image: linear-gradient(to right, grey, black);  */
+    height: 60px;
+    width: 100%;
+    position: sticky;
+}
+.navbar nav ul{
+    display: flex;
+    float: right;
+    list-style: none;
+    margin: 4px;
+    padding: 6px;
+
+
+}
+a:hover{
+    color: rebeccapurple;
+    font-size: medium;
+   
+}
+.navbar nav ul li a{
+   
+    color: beige;
+    text-decoration: none;
+   
+}
+
+.navbar nav ul li{
+    font-size: small;
+    margin-right: 20px;
+    padding: 10px;
+    
+    font-family: 'Mukta', sans-serif;
+   
+}
+
+.main{
+    
+    color: white;
+    height: 100px;
+    text-align: center;
+    font-family:   'Mukta', sans-serif;
+}
+.main h1{
+    margin-top: 30px;
+}
+.main p{
+    font-size: larger;
+
+}
+
+.picture{
+    display: flex;
+    /* margin-top: 60px; */
+    margin: 60px;
+    padding: 30px;
+    
+   
+    /* align-items: center; */
+    /* justify-content: center;
+    text-align: center; */
+    justify-content: center; 
+   align-items: center;
+}
+
+.picture img{
+    height: 280px;
+    width: 270px;
+    margin-left:50px ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey ;
+    border-radius: 150px;
+}
+.picture p{
+    width: 270px;
+    color:white;
+    word-spacing: 2px;
+    font-family:  'Mukta', sans-serif;
+}
+
+.shadow{
+    display: flex;
+    height: 50px;
+    width: 1150px;
+   
+    margin: 60px;
+    padding: 30px;
+    justify-content: space-between; 
+   align-items: center;
+   border-radius: 30px;
+   background-color: rgb(133, 133, 248);
+   box-shadow: 3px 4px 10px;
+}
+.shadow p{
+    padding: 30px;
+    margin: 30px;
+    font-size: x-large;
+    font-family:'Mukta', sans-serif;
+    color:white;
+
+}
+.button{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border: 0px;
+    font-family:'Mukta', sans-serif;
+    background-color:grey ;
+    color:white;
+
+}
+.flex{
+    
+    display: flex;
+    height: 158px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-items: center;
+   margin: 60px;
+}
+.fbox1{
+   
+    height: 109px;
+    width: 345px;
+   
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.foot{
+    background-image: linear-gradient(to bottom,black,  rgb(59, 58, 58));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    height: 200px;
+    color: white;
+    font-family:'Mukta', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-top: 15px;
+    padding: 8px;
+}
+.foot1{
+    background-image: linear-gradient(to bottom,rgb(59,58,58), black);
+    
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px;
+
+    color: white;
+    font-family:'Mukta', sans-serif;
+}
+
+.button1{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: 0px;
+    font-family:'Mukta', sans-serif;
+    background-color:rgb(117, 196, 242) ;
+    color:white;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px;
+    cursor: pointer;
+    
+}
+.button1:hover
+{
+ background-color:grey;
+ height: 45px;
+    width: 155px;
+}
