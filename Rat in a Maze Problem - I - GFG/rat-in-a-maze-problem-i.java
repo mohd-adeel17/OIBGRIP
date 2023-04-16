@@ -29,29 +29,87 @@ class Rat {
 
 // } Driver Code Ends
 
-class Solution {
+// class Solution {
+//         public static void solve(int i,int j,int[][]m,int n,ArrayList<String>ans,String s,int [][]visited){
+//             if(i==n-1 && j==n-1){
+//                 ans.add(s);
+//                 return;
+//             }
+//             if(i+1<n && m[i+1][j]==1 && visited[i+1][j]==0){
+//                 visited[i][j]=1;
+//                 solve(i+1,j,m,n,ans,s+"D",visited);
+//                 visited[i][j]=0;
+//             }
+//             if (j-1>=0 && m[i][j-1]==1 && visited[i][j-1]==0){
+//                 visited[i][j]=1;
+//                 solve(i,j-1,m,n,ans,s+"L",visited);
+//                 visited[i][j]=0;
+//             }
+
+//             if (j+1<n && m[i][j+1]==1 && visited[i][j+1]==0){
+//                 visited[i][j]=1;
+//                 solve(i,j+1,m,n,ans,s+"R",visited);
+//                 visited[i][j]=0;
+//             }
+//             if(i-1>=0 && m[i-1][j]==1 && visited[i-1][j]==0){
+//                 visited[i][j]=1;
+//                 solve(i-1,j,m,n,ans,s+"U",visited);
+//                 visited[i][j]=0;
+//             }
+//             else{
+//                 return;
+//             }
+            
+
+
+
+
+//         }
+//         public static ArrayList<String> findPath(int[][] m, int n) {
+//             ArrayList<String>ans=new ArrayList<>();
+//             String s="";
+//             int i=0;int j=0;
+//             int [][]visited=new int[n][n];
+//             if(m[0][0]!=0){
+//               solve(i,j,m,n,ans,s,visited);
+//             }
+            
+//             else{
+//                 ans.add("-1");
+//             }
+//             if(ans.size()==0){
+//                 ans.add("-1");
+//             }
+            
+//             return ans;
+//         }
+//     }
+    
+    
+    
+    class Solution {
         public static void solve(int i,int j,int[][]m,int n,ArrayList<String>ans,String s,int [][]visited){
             if(i==n-1 && j==n-1){
                 ans.add(s);
                 return;
             }
-            if(i+1<n && m[i+1][j]==1 && visited[i+1][j]==0){
+            if(i<n-1 && i>=0 && m[i+1][j]==1 && visited[i+1][j]==0){
                 visited[i][j]=1;
                 solve(i+1,j,m,n,ans,s+"D",visited);
                 visited[i][j]=0;
             }
-            if (j-1>=0 && m[i][j-1]==1 && visited[i][j-1]==0){
+            if (j<=n-1 && j>0 && m[i][j-1]==1 && visited[i][j-1]==0){
                 visited[i][j]=1;
                 solve(i,j-1,m,n,ans,s+"L",visited);
                 visited[i][j]=0;
             }
 
-            if (j+1<n && m[i][j+1]==1 && visited[i][j+1]==0){
+            if (j<n-1 && j>=0 && m[i][j+1]==1 && visited[i][j+1]==0){
                 visited[i][j]=1;
                 solve(i,j+1,m,n,ans,s+"R",visited);
                 visited[i][j]=0;
             }
-            if(i-1>=0 && m[i-1][j]==1 && visited[i-1][j]==0){
+            if(i<=n-1 && i>0 && m[i-1][j]==1 && visited[i-1][j]==0){
                 visited[i][j]=1;
                 solve(i-1,j,m,n,ans,s+"U",visited);
                 visited[i][j]=0;
@@ -77,10 +135,6 @@ class Solution {
             else{
                 ans.add("-1");
             }
-            if(ans.size()==0){
-                ans.add("-1");
-            }
-            
             return ans;
         }
     }
